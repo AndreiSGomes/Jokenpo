@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" rel="stylesheet">
+    <title>Jokenpo</title>
+
+
+</head>
+
+
+
+<body>
+
+    <h1><img src="imgs/logo.png"></h1>
+
+                        <!--Icones do Jogador-->
+    <h2 id="nome-jogador"></h2> 
+    <p id="pontos"></p>
+    <ul id="opcoes">
+        <li>
+            <a id="pedra" onclick="jogar(1)">
+            <img src="imgs/pedra-apagada.png"
+             height="100" width="100" onmousemove="PedraAcesa()" onmouseout="PedraApagada()" id="img-rock"></a>
+        </li>
+        <li>
+            <a id="papel" onclick="jogar(2)">
+            <img src="imgs/papel-apagado.png"  onmousemove="PapelAceso()" onmouseout="PapelApagado()" id="img-paper" height="100" width="100" ></a>
+        </li>
+        <li>
+            <a id="tesoura" onclick="jogar(3)">
+            <img src="imgs/tesoura-apagada.png" onmousemove="TesouraAcesa()" onmouseout="TesouraApagada()" height="100" width="100" id="img-sisor"></a>
+        </li>
+    </ul>
+    <h2 id="nome-computador">Computador</h2> 
+    <ul id="opcoes-com">
+        <li>
+            <a id="tesoura-com">
+            <img src="imgs/tesoura-apagada.png" height="100" width="100"></a>
+        </li>
+        <li>
+            <a id="papel-com">
+            <img src="imgs/papel-apagado.png" height="100" width="100"></a>
+        </li>
+        <li>
+            <a id="pedra-com">
+            <img src="imgs/pedra-apagada.png" height="100" width="100"></a>
+        </li>
+    </ul>
+
+
+<!--
+    <a id="Escolha1" onclick="jogar(1)">
+    <img src="imgs/pedra-apagada.png" onmouseover="PedraAcesa()" onmouseout="PedraApagada()"
+    alt="icon pedra apagada" height="100" width="100" id="pedra"></a>
+    
+    <img src="imgs/papel-apagado.png" onmouseover="PapelAceso()" onmouseout="PapelApagado()" onclick="jogar(2)"
+    alt="icon papel apagado" height="100" width="100" id="papel">
+   
+    <img src="imgs/tesoura-apagada.png" onmouseover="TesouraAcesa()" onmouseout="TesouraApagada()" onclick="jogar(3)"
+    alt="icon pedra apagada" height="100" width="100" id="tesoura">                        -->
+                        
+    
+                        <!--Icones do Computador-->
+    <!--
+        <h2 id="computer">Computador</h2>
+    <img src="imgs/tesoura-apagada.png" onmouseover="TesouraComAcesa()" onmouseout="TesouraComApagada()"
+    alt="icon tesoura apagada" height="100" width="100" id="tesoura-com">
+                        
+    <img src="imgs/papel-apagado.png" onmouseover="PapelComAceso()" onmouseout="PapelComApagado()"
+    alt="icon papel apagado" height="100" width="100" id="papel_com">
+                       
+    <img src="imgs/pedra-apagada.png" onmouseover="PedraComAcesa()" onmouseout="PedraComApagada()"
+    alt="icon pedra apagada" height="100" width="100" id="pedra-com">    -->
+    
+    <div id="mensagens">&nbsp;</div>
+
+    <footer>
+        Created by <a href="#">AG Games</a><br>
+        Todos os direitos reservados.&copy; 2020
+    </footer>
+        
+
+<script src="js/jogo.js"> </script>
+
+</body>
+</html>
