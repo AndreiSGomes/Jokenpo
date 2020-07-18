@@ -1,57 +1,105 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Times New Roman', sans-serif;
+    
 }
+body {
+    background: url(../imgs/fundo1.jpg) no-repeat;
+    width:100%;
+    height:100%;
+}
+
 h1 {
     text-align: center;
     margin-top: 3%;
 }
 
-#nome-jogador {
+#jokenpo {
     position: relative;
-    margin-top: 2%;
-    margin-left: 27%;
-    padding: 1%; 
-}
-#opcoes {
-    list-style: none;
-    margin-left: 20%
-}
-#opcoes li {
-    float: left;
-       
-}
-#opcoes li a {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
-#nome-computador{
-    float: right;
+#jogador1, #CPU {
     position: relative;
-    margin-right:25%;
-    margin-top: -3%;
-    
+    display: flex;
+    margin: 0 auto;
 }
 
-#opcoes-com{
-    list-style: none;
-    margin-right: 20%;
+#jogador1 li, #CPU li {
+    display: inline;
+    position: relative;
+    left: -20%;
+    top: 130px;
 }
-#opcoes-com li{
-    float: right;
+
+#nome-jogador, #nome-computador {
+    position: relative;
+    font-size: 25pt;
+    color: #ffffff;
+    left: 38%;
+    top: 30px;
 }
-#opcoes-com li a{
-    display: block;
+#pontosJogador, #pontosCPU {
+    position: relative;
+    color: #ffffff;
+    font-size: 35px;
+    top: 30px;
+    left: 60%;
+}
+#pontosCPU {
+    left: -19%;
+}
+#versus {
+    position: relative;
+    color: #ffffff;
+    font-size: 35px;
+    left: 2%;
+    top: 30px;
 }
 #mensagens {
-    margin-top: 200px;
+    margin-top: 300px;
     text-align: center;
     font-size: 30px;
-    
+    color: #ffffff; 
 }
 footer {
     text-align: center;
-    position: absolute;
-    margin-top: 30%;
-    margin-left: 43%;
+    position: relative;
+    margin-top: 12%;
+    color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+    #jogador1, #CPU {
+        padding: 5px;
+        margin: 0 auto;
+    }
+    #jogador1 li{
+        top: 90px;
+    }
+    #nome-computador {
+        top: 120px;
+        left: 150px;
+    }
+    #CPU li{
+        top: 180px;
+        left: -100px;
+    }
+    #pontosCPU {
+        top: 120px;
+        left: 230px;
+    }
+    #versus {
+        display: none;
+    }
+    footer{
+      position: relative; 
+    }
+    #mensagens {
+        margin-top: 250px;
+    }
+
 }
