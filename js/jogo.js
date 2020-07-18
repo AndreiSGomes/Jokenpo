@@ -1,4 +1,4 @@
-//var nomejogador = window.prompt("Digite seu nome: ")
+var nomejogador = window.prompt("Digite seu nome: ")
 var jogadorEscolha = 0;
 var jogadorPontos = 0
 var computadorEscolha = 0;

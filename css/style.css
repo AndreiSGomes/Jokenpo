@@ -31,6 +31,7 @@ h1 {
 #jogador1 li, #CPU li {
     display: inline;
     position: relative;
+    cursor: pointer;
     left: -20%;
     top: 130px;
 }
@@ -60,15 +61,16 @@ h1 {
     top: 30px;
 }
 #mensagens {
-    margin-top: 300px;
+    position: relative;
     text-align: center;
     font-size: 30px;
     color: #ffffff; 
+    top: 200px;
 }
 footer {
     text-align: center;
     position: relative;
-    margin-top: 12%;
+    top: 400px;
     color: #ffffff;
 }
 
@@ -76,14 +78,20 @@ footer {
     #jogador1, #CPU {
         padding: 5px;
         margin: 0 auto;
+        left: -15px;
+    }
+    #nome-jogador, #pontosJogador {
+        top: -5px;
     }
     #jogador1 li{
-        top: 90px;
+        top: 50px;
+        cursor: pointer;
     }
     #nome-computador {
         top: 120px;
-        left: 150px;
+        left: 170px;
     }
+
     #CPU li{
         top: 180px;
         left: -100px;
@@ -95,11 +103,12 @@ footer {
     #versus {
         display: none;
     }
+    #mensagens {
+        left: -10px;
+        top: 200px;
+    }
     footer{
       position: relative; 
+      margin-top: -15%;
     }
-    #mensagens {
-        margin-top: 250px;
-    }
-
 }
